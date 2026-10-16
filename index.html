@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martín Rubio Capel | Portfolio ASIR</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            border-bottom: 1px solid #334155;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--accent); }
+        p.subtitle { font-size: 1.2rem; color: var(--text-muted); }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+        .section-title { font-size: 1.8rem; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-top: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .card { background-color: var(--card-bg); border-radius: 8px; padding: 1.5rem; border: 1px solid #334155; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card h3 { color: var(--accent); margin-top: 0; }
+        .tag { display: inline-block; background-color: #0284c7; color: white; padding: 2px 8px; font-size: 0.8rem; border-radius: 4px; margin-right: 5px; margin-bottom: 10px; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid #334155; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Martín Rubio Capel</h1>
+        <p class="subtitle">Administrador de Sistemas Informáticos en Red (ASIR)</p>
+        <p style="color: var(--text-muted);">Málaga, España</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <span class="tag">Proxmox VE</span>
+                    <span class="tag">Virtualización</span>
+                    <span class="tag">Homelab</span>
+                </div>
+                <h3>Infraestructura Homelab en Proxmox VE</h3>
+                <p>Diseño y despliegue de un servidor de prácticas utilizando un minipc HP EliteDesk como hipervisor Proxmox VE. Gestión de VMs, LXC contenedores y automatización de copias de seguridad.</p>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Redes</span>
+                    <span class="tag">Linux</span>
+                </div>
+                <h3>Servicios de Red Contenerizados</h3>
+                <p>Implementación de microservicios corporativos simulados con Docker (DNS local, proxy inverso, monitorización). Configuración de redes virtuales internas y aislamiento de tráfico.</p>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="tag">Bash</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">Scripting</span>
+                </div>
+                <h3>Automatización y Monitorización Bash</h3>
+                <p>Desarrollo de scripts en entorno Linux para la automatización de respaldos periódicos, monitorización del estado del sistema y alertas ante fallos de servicios críticos.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Habilidades Clave</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="card">
+                <h3>Sistemas</h3>
+                <p>Linux (Ubuntu/Debian), Windows Server, Proxmox VE, Docker.</p>
+            </div>
+            <div class="card">
+                <h3>Redes</h3>
+                <p>TCP/IP, VLANs, DNS, DHCP, VPN, Diagnóstico de Red.</p>
+            </div>
+            <div class="card">
+                <h3>Soporte</h3>
+                <p>Mantenimiento de Hardware, resolución de incidencias, Helpdesk.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Martín Rubio Capel — Portfolio Profesional ASIR</p>
+    </footer>
+
+</body>
+</html>
